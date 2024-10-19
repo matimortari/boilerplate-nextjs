@@ -1,14 +1,14 @@
-import { NextResponse } from "next/server"
-
-export const GET = async () => {
-	try {
-		const data = {
-			message: "Hello from the test route!",
-		}
-
-		return NextResponse.json(data)
-	} catch (error) {
-		console.error("Error occurred:", error)
-		return NextResponse.json({ error: "Internal Server Error" }, { status: 500 })
+export const GET = async (req: Request): Promise<Response> => {
+	if (req.method !== "GET") {
+		return new Response(JSON.stringify({ error: "Method Not Allowed" }), { status: 405 })
 	}
+
+	const data = {
+		message: "Hello from the test route!",
+	}
+
+	return new Response(JSON.stringify(data), {
+		status: 200,
+		headers: { "Content-Type": "application/json" },
+	})
 }
