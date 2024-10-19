@@ -18,23 +18,50 @@ A boilerplate for building a full-stack web application using Next.js, TypeScrip
 
 ## Getting Started
 
-1. Run the following commands on your shell:
+- Run the following commands on your shell:
 
-   ```bash
-   git clone https://github.com/matimortari/boilerplate-nextjs .
-   ```
+  ```bash
+  git clone https://github.com/matimortari/boilerplate-nextjs .
+  ```
 
-2. Install necessary dependencies:
+- Install necessary dependencies:
 
-   ```bash
-   npm install
-   ```
+  ```bash
+  npm install
+  ```
 
-3. Run the project in development mode:
+- Run the project in development mode...
 
-   ```bash
-   npm run dev
-   ```
+  ```bash
+  npm run dev
+  ```
+
+- ... or build the project and run it in production mode:
+
+  ```bash
+  npm run build
+  npm start
+  ```
+
+## Testing & Coverage
+
+- Run the following command to run unit & integration tests with Vitest:
+
+  ```bash
+  npm run test
+  ```
+
+- Run the following command to run end-to-end tests with Playwright:
+
+  ```bash
+  npm run test:e2e
+  ```
+
+- Run the following command to generate a coverage report for Vitest:
+
+  ```bash
+  npm run coverage
+  ```
 
 ## 📬 Contact
 
