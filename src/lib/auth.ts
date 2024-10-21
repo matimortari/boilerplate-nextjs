@@ -16,21 +16,21 @@ export const authOptions = {
 	providers: [
 		GitHubProvider({
 			clientId: process.env.GITHUB_CLIENT_ID ?? "",
-			clientSecret: process.env.GITHUB_CLIENT_SECRET ?? "",
+			clientSecret: process.env.GITHUB_CLIENT_SECRET ?? ""
 		}),
 		GoogleProvider({
 			clientId: process.env.GOOGLE_CLIENT_ID ?? "",
-			clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? "",
-		}),
+			clientSecret: process.env.GOOGLE_CLIENT_SECRET ?? ""
+		})
 	],
 	adapter: PrismaAdapter(db),
 	session: {
-		strategy: "database" as SessionStrategy,
+		strategy: "database" as SessionStrategy
 	},
 	callbacks: {
 		session: ({ session, user }) => {
 			session.user.id = user.id
 			return session
-		},
-	},
+		}
+	}
 }

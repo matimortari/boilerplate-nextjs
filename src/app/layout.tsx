@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
 	title: "Next.js App",
-	description: "Next.js Boilerplate website.",
+	description: "Next.js Boilerplate website."
 }
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {

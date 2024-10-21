@@ -4,11 +4,11 @@ export const GET = async (req: Request): Promise<Response> => {
 	}
 
 	const data = {
-		message: "Hello from the test route!",
+		message: "Hello from the test route!"
 	}
 
 	return new Response(JSON.stringify(data), {
 		status: 200,
-		headers: { "Content-Type": "application/json" },
+		headers: { "Content-Type": "application/json" }
 	})
 }

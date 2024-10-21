@@ -12,7 +12,7 @@ export default function Home() {
 	const { data, refetch } = useQuery({
 		queryKey: ["get-message"],
 		queryFn: getMessage,
-		enabled: false,
+		enabled: false
 	})
 
 	return (
