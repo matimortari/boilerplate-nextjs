@@ -4,6 +4,7 @@ import GitHubProvider from "next-auth/providers/github"
 import GoogleProvider from "next-auth/providers/google"
 import { db } from "./db"
 
+// Extend the built-in session type
 declare module "next-auth" {
 	interface Session {
 		user: DefaultSession["user"] & {
@@ -12,6 +13,7 @@ declare module "next-auth" {
 	}
 }
 
+// Set up the authentication options for NextAuth.js
 export const authOptions = {
 	providers: [
 		GitHubProvider({
