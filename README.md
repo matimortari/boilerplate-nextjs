@@ -4,21 +4,20 @@ A boilerplate for building a full-stack web application using Next.js, TypeScrip
 
 ## Key Features
 
-- Next.js with App Router.
-- TypeScript.
-- Tailwind CSS.
-- Light/dark theme switch.
-- shadcn/ui integration for UI components.
-- React Query integration for data fetching.
-- NextAuth for authentication, with Google & GitHub providers.
-- Prisma ORM for database management.
-- Vitest for unit & integration testing.
-- Playwright for end-to-end testing.
-- Prettier & ESLint support.
+- **Next.js** with App Router.
+- **TypeScript**.
+- **Tailwind CSS**.
+- **shadcn/ui** integration for UI components.
+- **React Query** integration for data fetching.
+- **NextAuth.js** for authentication, with Google & GitHub providers.
+- **Prisma** ORM for database management.
+- **Vitest** for unit & integration testing.
+- **Playwright** for end-to-end testing.
+- **Prettier** & **ESLint** support.
 
 ## Getting Started
 
-- Run the following commands on your shell:
+- Clone the repository:
 
   ```bash
   git clone https://github.com/matimortari/boilerplate-nextjs .
@@ -45,19 +44,19 @@ A boilerplate for building a full-stack web application using Next.js, TypeScrip
 
 ## Testing & Coverage
 
-- Run the following command to run unit & integration tests with Vitest:
+- Run the following command to run unit & integration tests with **Vitest**:
 
   ```bash
   npm run test
   ```
 
-- Run the following command to run end-to-end tests with Playwright:
+- Run the following command to run end-to-end tests with **Playwright**:
 
   ```bash
   npm run test:e2e
   ```
 
-- Run the following command to generate a coverage report for Vitest:
+- Run the following command to generate a coverage report for **Vitest**:
 
   ```bash
   npm run coverage
@@ -67,6 +66,6 @@ A boilerplate for building a full-stack web application using Next.js, TypeScrip
 
 Feel free to reach out to discuss collaboration opportunities or to say hello!
 
-- [My Email](mailto:matheus.felipe.19rt@gmail.com)
-- [My LinkedIn Profile](https://www.linkedin.com/in/matheus-mortari-19rt)
-- [My GitHub Profile](https://github.com/matimortari)
+- [**My Email**](mailto:matheus.felipe.19rt@gmail.com)
+- [**My LinkedIn Profile**](https://www.linkedin.com/in/matheus-mortari-19rt)
+- [**My GitHub Profile**](https://github.com/matimortari)
